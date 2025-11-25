@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comisiones | Josenkaii</title>
+  <meta name="description" content="Comisiones de ilustración, diseño y arte personalizado." />
+  <link rel="stylesheet" href="stile.css" />
+  <link rel="icon" href="logo.ico" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">Josenkaii</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" data-nav>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="terminos_y_condisiones.html">Términos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Arte por comisiones</h1>
+        <p>Ilustraciones personalizadas y diseños únicos. Calidad profesional con entrega puntual.</p>
+        <div class="hero__cta">
+          <a class="btn primary" href="portafolio.html">Ver portafolio</a>
+          <a class="btn" href="contactos.html">Solicitar comisión</a>
+        </div>
+      </div>
+      <div class="hero__img" aria-hidden="true"></div>
+    </section>
+
+    <section class="features">
+      <h2>Servicios</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Ilustración Tradicional</h3>
+          <p>Estilos anime y chibi. Entrega en PNG con resolución a elección.</p>
+        </article>  
+      </div>
+    </section>
+
+    <section class="process">
+      <h2>Proceso</h2>
+      <ol class="steps">
+        <li><strong>Brief:</strong> Define tu idea, referencias y uso.</li>
+        <li><strong>Cotización:</strong> Presupuesto y tiempos de entrega.</li>
+        <li><strong>Boceto:</strong> Aprobación con 1–2 cambios por cada pedido.</li>
+        <li><strong>Entrega:</strong> Archivos finales y licencia acordada.</li>
+      </ol>
+      <a class="btn primary" href="contactos.html">Empezar</a>
+    </section>
+
+    <!--<section class="testimonials">
+      <h2>Opiniones</h2>
+      <div class="grid-2">
+        <blockquote class="quote">
+          “Trabajo impecable y comunicación clara. Superó expectativas.”
+          <footer>— Cliente A</footer>
+        </blockquote>
+        <blockquote class="quote">
+          “Branding consistente y versátil. Recomendado para creadores.”
+          <footer>— Cliente B</footer>
+        </blockquote>
+      </div>
+    </section>-->
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Artista. Todos los derechos reservados.</small>
+    <a href="terminos_y_condisiones.html">Términos y condiciones</a>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal__content">
+      <h3 id="modal-title">Mensaje</h3>
+      <p id="modal-body">Este es un ejemplo de modal.</p>
+      <button class="btn" data-close-modal>Cerrar</button>
+    </div>
+    <button class="modal__backdrop" data-close-modal aria-label="Cerrar"></button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

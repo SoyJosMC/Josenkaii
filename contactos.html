@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contactos | Josenkaii</title>
+  <meta name="description" content="Formulario de contacto para solicitar comisiones." />
+  <link rel="stylesheet" href="stile.css" />
+  <link rel="icon" href="logo.ico" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">Josenkaii</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" data-nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contactos.html" class="active">Contactos</a></li>
+        <li><a href="terminos_y_condisiones.html">Términos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Solicita tu comisión</h1>
+      <p>Cuéntame tu idea y te responderé con una cotización.</p>
+    </section>
+
+    <section class="contact">
+      <form id="contact-form" class="form" novalidate>
+      
+        <div class="info" >
+          <H2>"Los Pedidos se realizaran en Instagram mediante la mensajeria privada"</H2>
+        </div>
+
+        <div class="actions">
+          <button class="btn primary" type="button"><a id="ig" href="https://ig.me/m/josenkaii" target="_blank">Hacer Pedido</a></button>
+          <p class="note">Al hacer un pedido aceptas los <a href="terminos_y_condisiones.html">términos y condiciones</a>.</p>
+        </div>
+      </form>
+    </section>
+
+    <section class="contact-info">
+      <h2>También puedes Contactarme y Seguirme en</h2>
+      <ul class="list">
+        <li><strong>Email:</strong> contacto@tu-dominio.com</li>
+        <li><strong>Instagram:</strong> @Josenkaii</li>
+        <li><strong>TikTok:</strong> @Josenkai</li>
+        <li><strong>YouTube:</strong> @Josenkai</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Artista.</small>
+    <a href="terminos_y_condisiones.html">Términos y condiciones</a>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal__content">
+      <h3 id="modal-title">Formulario enviado</h3>
+      <p id="modal-body">Gracias por tu mensaje. Te responderé en breve.</p>
+      <button class="btn" data-close-modal>Cerrar</button>
+    </div>
+    <button class="modal__backdrop" data-close-modal aria-label="Cerrar"></button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

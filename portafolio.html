@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | Josenkaii</title>
+  <meta name="description" content="Galería de trabajos y proyectos de comisiones." />
+  <link rel="stylesheet" href="stile.css" />
+  <link rel="icon" href="logo.ico" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">Josenkaii</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" data-nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="portafolio.html" class="active">Portafolio</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="terminos_y_condisiones.html">Términos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Portafolio</h1>
+      <p>Selecciona una categoría para filtrar.</p>
+
+      <div class="filters">
+        <button class="chip active" data-filter="all">Todo</button>
+        <button class="chip" data-filter="ilustracion-A">Digital</button>
+        <button class="chip" data-filter="ilustracion-B">Tradicional</button>
+      </div>
+    </section>
+
+    <section class="gallery grid-3" id="gallery">
+      <!-- Reemplaza las imágenes con tus archivos -->
+      <figure class="item" data-category="ilustracion-A">
+        <img src="https://picsum.photos/600/400?random=1" alt="Ilustración 1" />
+        <figcaption>Ilustración 1 — Anime</figcaption>
+      </figure>
+      <figure class="item" data-category="ilustracion-B">
+        <img src="https://picsum.photos/600/400?random=2" alt="Branding 1" />
+        <figcaption>Ilustración — Chibi</figcaption>
+      </figure>
+      <figure class="item" data-category="ilustracion-A">
+        <img src="https://picsum.photos/600/400?random=4" alt="Ilustración 2" />
+        <figcaption>Ilustración 2 — chibi</figcaption>
+      </figure>
+      <figure class="item" data-category="ilustracion-B">
+        <img src="https://picsum.photos/600/400?random=5" alt="Branding 2" />
+        <figcaption>Ilustración — Anime</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Artista.</small>
+    <a href="terminos_y_condisiones.html">Términos y condiciones</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
